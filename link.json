@@ -1,0 +1,42 @@
+[
+    {
+        "href": "./lab/cube riddle/index.html",
+        "title": "原神方块类谜题解密器",
+        "tags": ["js", "genshin"]
+    },
+    {
+        "href": "./lab/cyberpunk/buhui.html",
+        "title": "网络疯子模拟器",
+        "tags": ["js"]
+    },
+    {
+        "href": "./lab/artifact/index.html",
+        "title": "[转载]圣遗物筛选",
+        "tags": ["vue", "genshin"]
+    },
+    {
+        "href": "./lab/genshinvideo/index.html",
+        "title": "原神高清视频",
+        "tags": ["vue", "genshin"]
+    },
+    {
+        "href": "./lab/genshindynamic1/index.html",
+        "title": "原神Q版生日贺图合集",
+        "tags": ["vue", "genshin"]
+    },
+    {
+        "href": "./lab/games/2048/index.html",
+        "title": "2048",
+        "tags": ["vue", "game"]
+    },
+    {
+        "href": "./lab/games/window/index.html",
+        "title": "窗",
+        "tags": ["vue", "game"]
+    },
+    {
+        "href": "./lab/learn_english/index.html",
+        "title": "英语单词学习",
+        "tags": ["vue", "study"]
+    }
+]
