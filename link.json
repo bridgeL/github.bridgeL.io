@@ -38,5 +38,10 @@
         "href": "./lab/learn_english/index.html",
         "title": "英语单词学习",
         "tags": ["vue", "study"]
+    },
+    {
+        "href": "./lab/games/cocktail/index.html",
+        "title": "鸡尾酒",
+        "tags": ["vue", "game"]
     }
 ]
