@@ -43,5 +43,10 @@
         "href": "./lab/games/cocktail/index.html",
         "title": "鸡尾酒",
         "tags": ["vue", "game"]
+    },
+    {
+        "href": "./lab/games/cocktail_mobile/index.html",
+        "title": "鸡尾酒-手机",
+        "tags": ["vue", "game","mobile"]
     }
 ]
