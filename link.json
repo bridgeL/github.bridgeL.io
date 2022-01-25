@@ -43,5 +43,9 @@
         "href": "./lab/games/cocktail_mobile/index.html",
         "title": "鸡尾酒",
         "tags": ["vue", "game","mobile"]
+    },    {
+        "href": "./lab/lead_word/index.html",
+        "title": "引导词",
+        "tags": ["vue", "study"]
     }
 ]
