@@ -276,12 +276,12 @@ let vm = new Vue({
             // 位移超过多少则判定滑动
             if (Math.abs(x) > Math.abs(y)) {
                 console.log("x", x);
-                if (x < -120) this.enterKey({ "key": "a" });
-                if (x > 120) this.enterKey({ "key": "d" });
+                if (x < -60) this.enterKey({ "key": "a" });
+                if (x > 60) this.enterKey({ "key": "d" });
             } else {
                 console.log("y", y);
-                if (y < -120) this.enterKey({ "key": "w" });
-                if (y > 120) this.enterKey({ "key": "s" });
+                if (y < -60) this.enterKey({ "key": "w" });
+                if (y > 60) this.enterKey({ "key": "s" });
             }
         },
     },
