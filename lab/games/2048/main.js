@@ -225,11 +225,13 @@ let vm = new Vue({
                 originx: 0,
                 originy: 0,
             },
+            height:700,
         };
     },
 
     mounted() {
         this.enterKeyup();
+        this.height = window.screen.availHeight - 100;
     },
 
     destroyed() {

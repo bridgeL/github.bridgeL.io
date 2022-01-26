@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div id="root" @touchstart.stop="down" @touchmove.stop="move" @touchend.stop="end">
+    <div id="root" @touchstart.stop="down" @touchmove.stop="move" @touchend.stop="end" :style="{height:height+'px'}">
         <div>{{ msg }}</div>
 
         <div class="container">
