@@ -1,1 +1,33 @@
-<!DOCTYPE html><html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=0.5,maximum-scale=2,user-scalable=1"><link rel="icon" href="favicon.ico"><title>vue-template</title><link href="css/app.fbbf76d7.css" rel="preload" as="style"><link href="js/app.7b6dd08e.js" rel="preload" as="script"><link href="js/chunk-vendors.c896cd95.js" rel="preload" as="script"><link href="css/app.fbbf76d7.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but vue-template doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script src="js/chunk-vendors.c896cd95.js"></script><script src="js/app.7b6dd08e.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="root">
+        <my_header :pages="pages" :page_index="page_index" :set_page_index="set_page" ></my_header>
+        <my_index class="top-gap" v-show="page_index == 0" ></my_index>
+
+        <tag_link_container class="top-gap" v-show="page_index == 1" :tag="'vue'" :tags="tags" :links="links" ></tag_link_container>
+
+        <div v-show="page_index == 2" class="top-gap">
+            <select @change="set_tag" ref="c1">
+                <option value="">全部</option>
+                <option v-for="(item, index) in Object.keys(tags)" :key="index">
+                    {{ item }}
+                </option>
+            </select>
+            <tag_link_container :tag="tag" :links="links" :tags="tags" ></tag_link_container>
+        </div>
+    </div>
+</body>
+<script src="js/vue.js"></script>
+<script src="main.js"></script>
+<link type="text/css" rel="styleSheet" href="main.css" />
+
+</html>

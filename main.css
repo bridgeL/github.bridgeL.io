@@ -1,0 +1,84 @@
+#root {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 800px;
+    height: 40px;
+}
+
+.index {
+    width: 40px;
+    display: flex;
+    justify-content: right;
+}
+
+.title {
+    width: 300px;
+    display: flex;
+}
+.tags {
+    display: flex;
+    width: 200px;
+}
+
+.header {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.option {
+    width: 100px;
+    cursor: pointer;
+}
+
+.option.T {
+    color: red;
+}
+
+.option.T > .ctrl {
+    text-decoration: underline;
+}
+
+html {
+    background: rgb(243, 242, 242);
+}
+
+select,
+option {
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+}
+
+.top-gap {
+    margin-top: 20px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    gap: 100px;
+}
+
+.title2 {
+    font-size: 40px;
+}
+
+.introduce {
+    width: 300px;
+}
