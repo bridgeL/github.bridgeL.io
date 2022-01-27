@@ -43,9 +43,15 @@ const linkData = [
         "href": "./lab/games/cocktail_mobile/index.html",
         "title": "鸡尾酒",
         "tags": ["vue", "game", "mobile"]
-    }, {
+    },
+    {
         "href": "./lab/lead_word/index.html",
         "title": "引导词",
+        "tags": ["vue", "study"]
+    },
+    {
+        "href": "./lab/grammar/index.html",
+        "title": "句子结构",
         "tags": ["vue", "study"]
     }
 ];
@@ -175,7 +181,7 @@ let vm = new Vue({
     },
     created() {
         // 载入page信息
-        this.pages = ["首页","Vue","归档"];
+        this.pages = ["首页", "Vue", "归档"];
         this.links = linkData;
         // 所有tag
         let temp = [];

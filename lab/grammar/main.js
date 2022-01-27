@@ -211,59 +211,54 @@ class Analyzer {
     // 生成一维数组
     flatten(tree, father_obj) {
         let flat_nodes = [];
-        // 记录首单词
-        let first_obj = {};
 
         // 深度优先遍历
         this.dfs(tree, function (node) {
-            if (node.string) {
-                let fid = node.father_id;
-                let show = 1;
-                if (father_obj[fid].fold) {
-                    if (!first_obj[fid]) {
-                        first_obj[fid] = true;
-                        show = 2;
-                    } else show = 0;
-                }
-
-                if (show > 0) {
-                    // 同组颜色相同
-                    let color = father_obj[fid].color;
-                    let line = father_obj[fid].focus ? "underline" : "none";
-
+            if (!node.string) {
+                let id = node.id;
+                let color = father_obj[id].color;
+                let line = father_obj[id].focus ? "underline" : "none";
+                if (father_obj[id].fold) {
                     let item = {
-                        id: node.id,
+                        id: id,
                         color: color,
-                        content: node.string,
+                        content: "...",
                         line: line,
                     };
                     flat_nodes.push(item);
-
-                    if (show == 2) {
-                        item = {
-                            id: "#" + node.id,
-                            color: color,
-                            content: "...",
-                            line: line,
-                        };
-                        flat_nodes.push(item);
-                        // 立即返回上层
-                        return 1;
-                    }
+                    // 不遍历孩子
+                    return 2;
                 }
+            }
+            else {
+                let fid = node.father_id;
+                let color = father_obj[fid].color;
+                let line = father_obj[fid].focus ? "underline" : "none";
+
+                let item = {
+                    id: node.id,
+                    color: color,
+                    content: node.string,
+                    line: line,
+                };
+                flat_nodes.push(item);
+
             }
             return 0;
         });
         return flat_nodes;
     }
 
-    // 鼠标浮动
+    // 鼠标悬浮
     hoverItem(id, val) {
         console.log(id, val);
-        // 搜索id
-        let fid = this.find_father_id(this.tree, id);
-        // 遇到...结点，重新搜索
-        if (!fid) fid = this.find_father_id(this.tree, id.slice(1));
+        let fid;
+
+        // 传进来...结点的id
+        if (Object.keys(this.father_obj).indexOf(id) != -1) fid = id;
+        // 搜索fid
+        else fid = this.find_father_id(this.tree, id);
+
         // 修改focus
         // 避免不必要的开销
         if (this.father_obj[fid].focus != val) {
@@ -276,12 +271,13 @@ class Analyzer {
     // 鼠标点击
     clickItem(id) {
         console.log(id);
-        // 搜索id
-        let fid = this.find_father_id(this.tree, id);
-        // 遇到...结点，重新搜索
-        if (!fid) fid = this.find_father_id(this.tree, id.slice(1));
-        // 翻转fold
-        this.father_obj[fid].fold = !this.father_obj[fid].fold;
+        // 传进来...结点的id
+        if (Object.keys(this.father_obj).indexOf(id) != -1) this.father_obj[id].fold = false;
+        else {
+            // 搜索fid
+            let fid = this.find_father_id(this.tree, id);
+            this.father_obj[fid].fold = true;
+        }
         // 重新生成output
         this.output = this.flatten(this.tree, this.father_obj);
     }
@@ -296,7 +292,7 @@ let smart_view = Vue.extend({
             @mouseleave="word_blur(item.id)" @click="word_hide(item.id)">{{item.content+" "}}</div>
     </div>
     `,
-    props:["text"],
+    props: ["text"],
     data() {
         return {
             analyzer: new Analyzer(this.text),
@@ -323,7 +319,7 @@ let smart_view = Vue.extend({
     },
 });
 
-Vue.component('smart_view',smart_view);
+Vue.component('smart_view', smart_view);
 
 let vm = new Vue({
     el: "#root",
@@ -333,6 +329,6 @@ let vm = new Vue({
             text: data[0],
         }
     },
-    components:{ smart_view }
+    components: { smart_view }
 });
 
