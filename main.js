@@ -1,6 +1,6 @@
 const linkData = [
     {
-        "href": "./lab/cube riddle/index.html",
+        "href": "./lab/genshin/cube riddle/index.html",
         "title": "原神方块类谜题解密器",
         "tags": ["js", "genshin"]
     },
@@ -10,17 +10,17 @@ const linkData = [
         "tags": ["js"]
     },
     {
-        "href": "./lab/artifact/index.html",
+        "href": "./lab/genshin/artifact/index.html",
         "title": "[转载]圣遗物筛选",
         "tags": ["vue", "genshin"]
     },
     {
-        "href": "./lab/genshinvideo/index.html",
+        "href": "./lab/genshin/HD_video/index.html",
         "title": "原神高清视频",
         "tags": ["vue", "genshin"]
     },
     {
-        "href": "./lab/genshindynamic1/index.html",
+        "href": "./lab/genshin/dynamic_birth_pic/index.html",
         "title": "原神Q版生日贺图合集",
         "tags": ["vue", "genshin"]
     },
@@ -35,7 +35,7 @@ const linkData = [
         "tags": ["vue", "game"]
     },
     {
-        "href": "./lab/learn_english/index.html",
+        "href": "./lab/study/words/index.html",
         "title": "英语单词学习",
         "tags": ["vue", "study"]
     },
@@ -45,12 +45,12 @@ const linkData = [
         "tags": ["vue", "game", "mobile"]
     },
     {
-        "href": "./lab/lead_word/index.html",
+        "href": "./lab/study/conjunction/index.html",
         "title": "引导词",
         "tags": ["vue", "study"]
     },
     {
-        "href": "./lab/grammar/index.html",
+        "href": "./lab/study/grammar/index.html",
         "title": "句子结构",
         "tags": ["vue", "study"]
     }

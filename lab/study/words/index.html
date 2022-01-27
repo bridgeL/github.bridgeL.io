@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="root">
+        <tool :set_painter_code="set_painter_code" :paint_clear="clear_page" :random="random" :show="show_chinese"
+            :name="name" :painter_code="painter_code" :set_random="set_random" :set_show="set_show_chinese"
+            :set_name="set_name" ></tool>
+        <div class="main">
+            <div>
+                <p>[z]切换显示 [r]切换顺序 [a][d][←][→]翻页</p>
+                <p>设备页面宽度: {{ width }}</p>
+            </div>
+
+            <page_btn :page="page" :page_max="page_max" :set_page="set_page" ></page_btn>
+
+            <div class="words">
+                <word_container :words="bin[name][page][0]" :show_chinese="show_chinese" :random="random" :paint="paint" ></word_container>
+                <word_container :words="bin[name][page][1]" :show_chinese="show_chinese" :random="random" :paint="paint" ></word_container>
+            </div>
+
+            <page_btn :page="page" :page_max="page_max" :set_page="set_page" ></page_btn>
+        </div>
+    </div>
+</body>
+<script src="vue.js"></script>
+<script src="main.js"></script>
+<link type="text/css" rel="styleSheet" href="main.css" />
+
+</html>

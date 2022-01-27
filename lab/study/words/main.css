@@ -1,0 +1,109 @@
+#root {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2c3e50;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+.main {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    width: auto;
+    justify-items: center;
+    align-items: center;
+}
+
+.words {
+    display: flex;
+    flex-wrap: wrap; /* 方便手机端适配 */
+    justify-content: center;
+}
+
+.word {
+    display: flex;
+    width: 360px;
+    height: 30px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    margin: 1px;
+    border: solid gray 1px;
+}
+
+.long {
+    font-size: 12px;
+    width: 300px;
+    text-align-last: right;
+}
+
+.color1 {
+    background-color: lightpink;
+}
+.color2 {
+    background-color: lightblue;
+}
+.color3 {
+    background-color: lightgreen;
+}
+
+.container {
+    position: fixed;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    bottom: 10%;
+    width: 70px;
+}
+
+.func-btn {
+    height: 40px;
+}
+
+.painter-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.painter {
+    height: 70px;
+    width: 70px;
+    font-size: 20px;
+    border: solid 1px;
+    opacity: 0.3;
+}
+
+.show {
+    opacity: 1;
+}
+
+.red {
+    color: white;
+    background-color: red;
+}
+.blue {
+    color: white;
+    background-color: blue;
+}
+.green {
+    color: white;
+    background-color: green;
+}
+.white {
+    background-color: white;
+}
+button > a {
+    text-decoration-line: none;
+    color: inherit;
+}
+
+.page-btns {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.page-index {
+    margin: 0 10px;
+}
