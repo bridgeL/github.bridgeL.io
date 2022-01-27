@@ -1,0 +1,48 @@
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+}
+.main[vue-my-window] {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 300px auto;
+}
+.msg-flex[vue-my-window] {
+    display: flex;
+    flex-direction: column;
+}
+.label[vue-my-window] {
+    margin: 10px 0;
+}
+.flex-pair[vue-my-window] {
+    display: flex;
+    justify-content: space-between;
+}
+.flex-data[vue-my-window] {
+    width: 100px;
+}
+.container[vue-my-window] {
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: repeat(4, 80px);
+}
+.item[vue-my-window] {
+    width: 70px;
+    height: 70px;
+    border-style: solid;
+    border-color: black;
+    overflow: hidden;
+}
+.item > div[vue-my-window] {
+    position: relative;
+    width: 70px;
+    height: 70px;
+}
