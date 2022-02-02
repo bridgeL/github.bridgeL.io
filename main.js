@@ -27,7 +27,7 @@ const linkData = [
     {
         "href": "./lab/games/2048/index.html",
         "title": "2048",
-        "tags": ["vue", "game"]
+        "tags": ["vue", "game","mobile"]
     },
     {
         "href": "./lab/games/window/index.html",
@@ -40,7 +40,7 @@ const linkData = [
         "tags": ["vue", "study"]
     },
     {
-        "href": "./lab/games/cocktail_mobile/index.html",
+        "href": "./lab/games/cocktail/index.html",
         "title": "鸡尾酒",
         "tags": ["vue", "game", "mobile"]
     },
