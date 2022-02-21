@@ -12,7 +12,7 @@ const linkData = [
     {
         "href": "./lab/genshin/artifact/index.html",
         "title": "[转载]圣遗物筛选",
-        "tags": ["vue", "genshin"]
+        "tags": ["vue", "genshin","nga"]
     },
     {
         "href": "./lab/genshin/HD_video/index.html",
@@ -53,6 +53,11 @@ const linkData = [
         "href": "./lab/study/grammar/index.html",
         "title": "句子结构",
         "tags": ["vue", "study"]
+    },
+    {
+        "href":"./lab/genshin/nga_face/index.html",
+        "title":"nga原神表情",
+        "tags":["vue","genshin","nga"]
     }
 ];
 
