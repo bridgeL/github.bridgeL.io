@@ -58,6 +58,11 @@ const linkData = [
         "href":"./lab/genshin/nga_face/index.html",
         "title":"nga原神表情",
         "tags":["vue","genshin","nga"]
+    },
+    {
+        "href":"./lab/study/words_new/index.html",
+        "title":"六级词汇",
+        "tags":["vue","study"]
     }
 ];
 
