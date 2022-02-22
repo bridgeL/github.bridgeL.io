@@ -35,9 +35,19 @@ const linkData = [
         "tags": ["vue", "game"]
     },
     {
-        "href": "./lab/study/words/index.html",
-        "title": "英语单词学习",
+        "href": "./lab/study/words/SET4/index.html",
+        "title": "四级词汇",
         "tags": ["vue", "study"]
+    },
+    {
+        "href":"./lab/study/words/SET6/index.html",
+        "title":"六级词汇",
+        "tags":["vue","study"]
+    },
+    {
+        "href":"./lab/study/words/BASE/index.html",
+        "title":"基础词汇",
+        "tags":["vue","study"]
     },
     {
         "href": "./lab/games/cocktail/index.html",
@@ -58,11 +68,6 @@ const linkData = [
         "href":"./lab/genshin/nga_face/index.html",
         "title":"nga原神表情",
         "tags":["vue","genshin","nga"]
-    },
-    {
-        "href":"./lab/study/words_new/index.html",
-        "title":"六级词汇",
-        "tags":["vue","study"]
     }
 ];
 
