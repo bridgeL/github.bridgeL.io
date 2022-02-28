@@ -35,21 +35,6 @@ const linkData = [
         "tags": ["vue", "game"]
     },
     {
-        "href": "./lab/study/words/SET4/index.html",
-        "title": "四级词汇",
-        "tags": ["vue", "study"]
-    },
-    {
-        "href":"./lab/study/words/SET6/index.html",
-        "title":"六级词汇",
-        "tags":["vue","study"]
-    },
-    {
-        "href":"./lab/study/words/BASE/index.html",
-        "title":"基础词汇",
-        "tags":["vue","study"]
-    },
-    {
         "href": "./lab/games/cocktail/index.html",
         "title": "鸡尾酒",
         "tags": ["vue", "game", "mobile"]
@@ -70,13 +55,13 @@ const linkData = [
         "tags":["vue","genshin","nga"]
     },
     {
-        "href":"./lab/study/words/search/index.html",
-        "title":"四六级常用单词检索器",
+        "href":"./lab/study/words/index.html",
+        "title":"单词学习（支持导入导出）",
         "tags":["vue","study"]
     },
     {
-        "href":"./lab/study/words/beta/index.html",
-        "title":"单词学习（支持导入导出）",
+        "href":"./lab/study/grammar/alpha/index.html",
+        "title":"句子染色（支持导入）",
         "tags":["vue","study"]
     }
 ];
