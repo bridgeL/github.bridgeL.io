@@ -1,5 +1,4 @@
-const linkData = [
-    {
+const linkData = [{
         "href": "./lab/genshin/cube riddle/index.html",
         "title": "原神方块类谜题解密器",
         "tags": ["js", "genshin"]
@@ -12,7 +11,7 @@ const linkData = [
     {
         "href": "./lab/genshin/artifact/index.html",
         "title": "[转载]圣遗物筛选",
-        "tags": ["vue", "genshin","nga"]
+        "tags": ["vue", "genshin", "nga"]
     },
     {
         "href": "./lab/genshin/HD_video/index.html",
@@ -27,7 +26,7 @@ const linkData = [
     {
         "href": "./lab/games/2048/index.html",
         "title": "2048",
-        "tags": ["vue", "game","mobile"]
+        "tags": ["vue", "game", "mobile"]
     },
     {
         "href": "./lab/games/window/index.html",
@@ -50,19 +49,24 @@ const linkData = [
         "tags": ["vue", "study"]
     },
     {
-        "href":"./lab/genshin/nga_face/index.html",
-        "title":"nga原神表情",
-        "tags":["vue","genshin","nga"]
+        "href": "./lab/genshin/nga_face/index.html",
+        "title": "nga原神表情",
+        "tags": ["vue", "genshin", "nga"]
     },
     {
-        "href":"./lab/study/words/index.html",
-        "title":"单词学习（支持导入导出）",
-        "tags":["vue","study"]
+        "href": "./lab/study/words/index.html",
+        "title": "单词学习",
+        "tags": ["vue", "study"]
     },
     {
-        "href":"./lab/study/grammar/alpha/index.html",
-        "title":"句子染色（支持导入）",
-        "tags":["vue","study"]
+        "href": "./lab/study/words-vue3/index.html",
+        "title": "单词学习V3",
+        "tags": ["vue3", "study", "Naive"]
+    },
+    {
+        "href": "./lab/study/grammar/alpha/index.html",
+        "title": "句子染色（支持导入）",
+        "tags": ["vue", "study"]
     }
 ];
 
@@ -191,7 +195,7 @@ let vm = new Vue({
     },
     created() {
         // 载入page信息
-        this.pages = ["首页", "Vue", "归档"];
+        this.pages = ["首页", "Vue3", "归档"];
         this.links = linkData;
         // 所有tag
         let temp = [];
@@ -251,4 +255,3 @@ let vm = new Vue({
         },
     },
 });
-

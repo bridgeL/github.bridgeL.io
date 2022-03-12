@@ -10,10 +10,10 @@
 
 <body>
     <div id="root">
-        <my_header :pages="pages" :page_index="page_index" :set_page_index="set_page" ></my_header>
-        <my_index class="top-gap" v-show="page_index == 0" ></my_index>
+        <my_header :pages="pages" :page_index="page_index" :set_page_index="set_page"></my_header>
+        <my_index class="top-gap" v-show="page_index == 0"></my_index>
 
-        <tag_link_container class="top-gap" v-show="page_index == 1" :tag="'vue'" :tags="tags" :links="links" ></tag_link_container>
+        <tag_link_container class="top-gap" v-show="page_index == 1" :tag="'vue3'" :tags="tags" :links="links"></tag_link_container>
 
         <div v-show="page_index == 2" class="top-gap">
             <select @change="set_tag" ref="c1">
@@ -22,7 +22,7 @@
                     {{ item }}
                 </option>
             </select>
-            <tag_link_container :tag="tag" :links="links" :tags="tags" ></tag_link_container>
+            <tag_link_container :tag="tag" :links="links" :tags="tags"></tag_link_container>
         </div>
     </div>
 </body>
