@@ -64,6 +64,11 @@ const linkData = [{
         "tags": ["vue3", "study", "Naive"]
     },
     {
+        "href": "./lab/study/time/index.html",
+        "title": "现在几点了",
+        "tags": ["vue3", "study", "Naive"]
+    },
+    {
         "href": "./lab/study/grammar/alpha/index.html",
         "title": "句子染色（支持导入）",
         "tags": ["vue", "study"]
