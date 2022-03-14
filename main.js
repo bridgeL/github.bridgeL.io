@@ -49,11 +49,6 @@ const linkData = [{
         "tags": ["vue", "study"]
     },
     {
-        "href": "./lab/genshin/nga_face/index.html",
-        "title": "nga原神表情",
-        "tags": ["vue", "genshin", "nga"]
-    },
-    {
         "href": "./lab/study/words/index.html",
         "title": "单词学习",
         "tags": ["vue", "study"]
